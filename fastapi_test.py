@@ -77,7 +77,7 @@ def register(user_id: str = Form(...), password: str = Form(...)):
     if user_id in users:
         return HTMLResponse(content=f"""
             <script>
-                alert("이미 가입된 사용자입니다.");
+                alert("이미 가입한 사용자입니다.");
                 window.location.href="/register";
             </script>
         """)
