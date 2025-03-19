@@ -2,7 +2,6 @@ from enum import Enum
 
 from fastapi import FastAPI
 #최종 merge 합의?
-#여긴 coupon의 main을 수정함
 # str을 상속하면 ModelName의 멤버를 str처럼 사용 가능(.value 생략 가능)
 # Enum을 상속하면 ModelName에 존재하지 않는 멤버 접근 시 에러 출력
 class ModelName(str, Enum):
